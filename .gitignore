@@ -1,0 +1,16 @@
+# Ignore environment files
+*.env
+*/.env
+auth-service/.env
+
+# Ignore compiled Java output
+target/
+**/target/
+
+# Ignore IntelliJ / VSCode project settings
+.idea/
+.vscode/
+
+# Ignore OS junk files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+# this is the config file that prometheus needs in order for it to know where to scrape the data from
+# need to run prometheus in a separate container. then provide it this file.
+
+scrape_configs:
+  - job_name: 'gateway'
+    metrics_path: 'actuator/prometheus'
+    static_configs:
+      - target: ['host.docker.internal:8765']
